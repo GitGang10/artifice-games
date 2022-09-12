@@ -1,0 +1,41 @@
+@import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Mono&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Comic+Neue&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans&display=swap');
+body {
+  font-family: 'Open Sans', sans-serif;
+}
+h1 {
+  font-family: 'IBM Plex Mono', monospace;
+}
+h2 {
+  font-family: 'Open Sans', sans-serif;
+  font-size: 34px;
+}
+h3 {
+  font-family: 'Open Sans', sans-serif;
+  font-size: 25px;
+}
+p {
+  font-family: 'Open Sans', sans-serif;
+}
+footer {
+  text-align: center;
+  background-color: #dddddd;
+}
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: #dddddd;
+}
+
+li {
+  float: left;
+}
+
+li a {
+  display: block;
+  padding: 8px;
+  font-family: 'Comic Neue', cursive;
+}

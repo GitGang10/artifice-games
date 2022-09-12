@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="robots" content="noindex">
+    <title>Artifice Games</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://unpkg.com/@ruffle-rs/ruffle"></script>
+  </head>
+  <body>
+    <h1>root@box~$: Artifice Games_</h1>
+    <ul>
+      <li><a href="index.html">Home</a></li>
+      <li><a href="mirrors.html">Mirrors</a></li>
+      <li><a href="htmljs.html">JavaScript Games</a></li>
+      <li><a href="webgl.html">WebGL Games</a></li>
+      <li><a href="flash.html">Flash Games</a></li>
+      <li><a href="credit.html">Credits</a></li>
+    </ul>
+    <h2>Flash Games</h2>
+    <p>Even though Adobe Flash was depricated in 2020, you can play flash games even now with <a href="https://ruffle.rs">Ruffle</a>.  Although in its current state, you can only play really old flash games (mostly pre-2006, but some 2007 games may work too).</p>
+    <div style="text-align:center">
+      <script>
+        function switchMovie() {
+          fmv = document.getElementById("games").value
+          document.getElementById("flashplay").src = fmv;
+        }
+      </script>
+      <label for="games">Choose a game:</label>
+      <select name="games" id="games">
+        <option value="swf/logo-anim.swf" selected>Ruffle Logo Animation</option>
+        <option value="swf/bloons.swf">Bloons</option>
+        <option value="swf/bloonstd.swf">Bloons Tower Defense</option>
+      </select><button type="button" onclick="switchMovie()">Load Game</button><br>
+    <embed id="flashplay" src="swf/logo-anim.swf" width="550" height="400"></embed>
+   </div>
+    <footer>
+      <p>2022 <a href="https://github.com/Spaceboy10">Spaceboy10</a> and contributors<br>
+        I am not responsible for any trouble you get in by using this site.<br>
+        <img src="valid_html5.png" alt="HTML5 passed"><img src="valid_css3_blue.png" alt="CSS3 passed"><img src="anybrowser.png" alt="complies with AnyBrowser campaign"></p>
+    </footer>
+  </body>
+</html>
